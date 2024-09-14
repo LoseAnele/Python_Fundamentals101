@@ -10,7 +10,7 @@ def assign_variables():
     z = 'Hello, World!' # Assign the string 'Hello, World!' to the variable z. 
     a = True # Assign the boolean True to the variable a.
     b = False # Assign the boolean False to the variable b.
-    return (x, y, z, a, b)# Return the values of x, y, z, a, and b as a tuple.
+    return x, y, z, a, b # Return the values of x, y, z, a, and b as a tuple.
     
 
 def get_variable_type(variable):
@@ -34,13 +34,13 @@ def get_variable_types():
     Returns:
         tuple: A tuple containing the data types of variables x, y, z, a, and b.
     """
-    x, y, z, a, b = assign_variables # Assign values to x, y, z, a, and b using the assign_variables function.
+    x, y, z, a, b = assign_variables() # Assign values to x, y, z, a, and b using the assign_variables function.
     type_x = get_variable_type(x) # Get the data type of x using the get_variable_type function.
     type_y = get_variable_type(y) # Get the data type of y using the get_variable_type function.
     type_z = get_variable_type(z) # Get the data type of z using the get_variable_type function.
     type_a = get_variable_type(a) # Get the data type of a using the get_variable_type function.
     type_b = get_variable_type(b) # Get the data type of b using the get_variable_type function.
-    return (type_x, type_y, type_z, type_a, type_b) # Return the data types as a tuple.
+    return type_x, type_y, type_z, type_a, type_b # Return the data types as a tuple.
 
 def arithmetic_operations():
     """
@@ -49,13 +49,13 @@ def arithmetic_operations():
     Returns:
         tuple: A tuple containing the results of addition, subtraction, multiplication, division, and modulus operations.
     """
-    x, y, z, a, b = assign_variables # Assign values to x, y, z, a, and b using the assign_variables function.
+    x, y, z, a, b = assign_variables() # Assign values to x, y, z, a, and b using the assign_variables function.
     sum_result = x + y # Calculate the sum of x and y.
     difference_result = x - y # Calculate the difference between x and y.
     product_result = x * y # Calculate the product of x and y.
     division_result = x / y  # Calculate the division of x by y.
     modulus_result = x % y  # Calculate the modulus of x and y.
-    return (sum_result, difference_result, product_result, division_result, modulus_result) # Return the results as a tuple.
+    return sum_result, difference_result, product_result, division_result, modulus_result # Return the results as a tuple.
 
 def get_numbers():
     """
